@@ -11,7 +11,6 @@ int main()
 	state = NOWORD;
 
 	while ((c = getchar())  != EOF) {
-		putchar(c);
 		nc++;
 
 		if (c == '\n')
