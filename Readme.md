@@ -7,8 +7,7 @@ This is a simple program that counts the number of characters, words, and lines 
 
 ### Requirements
 
-* Ncurses
-
-** sudo apt-get install libncurses5-dev
+- Ncurses
+	- sudo apt-get install libncurses5-dev
 
 
