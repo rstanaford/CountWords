@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <curses.h>
 
 #define WORD 1
 #define NOWORD 0
@@ -9,6 +10,10 @@ int main()
 
 	c = nc = nw = nl = 0;
 	state = NOWORD;
+
+	initscr();
+        getmaxyx(stdscr,row,col);
+	
 
 	while ((c = getchar())  != EOF) {
 		nc++;
@@ -24,9 +29,6 @@ int main()
 		}
 	}
 
-	printf("The number of chars entered was: %d\n", nc);
-	printf("The number of words entered was: %d\n", nw);
-	printf("The number of lines entered was: %d\n", nl);
 
 	return 0;
 }
